@@ -46,9 +46,6 @@ func main() {
 	}
 	getLogger.Infof("Get data order products and shelves")
 
-	fmt.Println("=+=+=+=")
-	fmt.Printf("Страница сборки заказов %d\n\n", orderNumbers)
-
 	logic.PrintOrder(orderNumbers, shelfProducts)
 
 	go func() {
